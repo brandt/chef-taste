@@ -47,7 +47,7 @@ The overall status will also be displayed in the bottom of the table.
 Most of the cookbooks are hosted in Github and are tagged for every release.
 The changelog is computed by obtaining the source URL provided in the community site and
 finding the tags being used and the latest tag and displaying a compare view that
-compares these two tags. This URL is then shortened using goo.gl URL shortener to fit the table.
+compares these two tags.
 
 The details are obtained only for cookbooks available in the community site. Other cookbooks are
 displayed but will simply be empty in the details column.
@@ -89,14 +89,14 @@ kannanmanickam@mac noodles$ taste --format json
     "used": "3.0.12",
     "latest": "4.0.4",
     "status": "out-of-date",
-    "changelog": "http://goo.gl/e1nBfW"
+    "changelog": "https://github.com/chef-cookbooks/mysql/compare/v3.0.12...v4.0.4"
   },
   "apache2": {
     "requirement": "~> 1.7.0",
     "used": "1.7.0",
     "latest": "1.8.4",
     "status": "out-of-date",
-    "changelog": "http://goo.gl/9ejcpi"
+    "changelog": "https://github.com/svanzoest-cookbooks/apache2/compare/1.7.0...v1.8.4"
   },
   "windows": {
     "requirement": ">= 0.0.0",

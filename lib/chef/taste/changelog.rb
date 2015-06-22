@@ -36,7 +36,7 @@ module Chef
         #
         # @param dep [Dependency] the dependent cookbook
         #
-        # @return [String] the goo.gl shortened URL for the changelog
+        # @return [String] the changelog url
         #
         def compute(dep)
           # Skip dependent cookbook which has no source url
@@ -50,7 +50,7 @@ module Chef
             else
               nil
             end
-          Googl.shorten(changelog_url).short_url unless changelog_url.nil?
+          changelog_url unless changelog_url.nil?
         end
       end
 
